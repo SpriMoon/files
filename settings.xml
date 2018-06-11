@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<settings>
+  <servers>    
+    <server>    
+      <id>puiblic-nexus</id>    
+      <username>aqb</username>    
+      <password>aqb123</password>    
+    </server>
+    <server>    
+      <id>local-nexus</id>    
+      <username>aqb</username>    
+      <password>aqb123</password>    
+    </server> 
+  </servers>        
+  <profiles>  
+    <profile>  
+      <id>dev</id>  
+      <repositories>  
+        <repository>  
+          <id>puiblic-nexus</id>  
+          <url>http://nexus.komect.net/nexus/content/groups/public/</url>  
+          <releases>  
+            <enabled>true</enabled>  
+          </releases>  
+	  <snapshots>  
+            <enabled>true</enabled>  
+          </snapshots>  
+        </repository>  
+	<repository>  
+          <id>local-nexus</id>  
+          <url>http://nexus.komect.net/nexus/content/repositories/aqb/</url>  
+          <releases>  
+            <enabled>true</enabled>  
+          </releases>  
+          <snapshots>  
+            <enabled>true</enabled>  
+          </snapshots>  
+        </repository>  
+      </repositories>  
+    </profile>  
+  </profiles>  
+  <activeProfiles>  
+    <activeProfile>dev</activeProfile>  
+  </activeProfiles>
+</settings>
